@@ -36,29 +36,29 @@ INSERT INTO Employee(emp_no,emp_name,emp_sal,dept_no)VALUES(106,'Anamika',2975,3
 
 SELECT * FROM Employee;
 
-INSERT INTO JOB(job_id,job_title,min_sal,max_sal)VALUES('IT PROG','Programmer',4000,10000);
-INSERT INTO JOB(job_id,job_title,min_sal,max_sal)VALUES('MK MGR','Marketing Manager',9000,15000);
-INSERT INTO JOB(job_id,job_title,min_sal,max_sal)VALUES('FI MGR','Finance Manager',8200,12000);
-INSERT INTO JOB(job_id,job_title,min_sal,max_sal)VALUES('FI ACC','Account',4200,9000);
-INSERT INTO JOB(job_id,job_title,min_sal,max_sal)VALUES('LEC','Lecturer',6000,17000);
-INSERT INTO JOB(job_id,job_title,min_sal,max_sal)VALUES('COMP OP','Computer Operator',1500,13000);
+INSERT INTO Job(Job_id,Job_title,min_sal,max_sal)VALUES('IT PROG','Programmer',4000,10000);
+INSERT INTO Job(Job_id,Job_title,min_sal,max_sal)VALUES('MK MGR','Marketing Manager',9000,15000);
+INSERT INTO Job(Job_id,Job_title,min_sal,max_sal)VALUES('FI MGR','Finance Manager',8200,12000);
+INSERT INTO Job(Job_id,Job_title,min_sal,max_sal)VALUES('FI ACC','Account',4200,9000);
+INSERT INTO Job(Job_id,Job_title,min_sal,max_sal)VALUES('LEC','Lecturer',6000,17000);
+INSERT INTO Job(Job_id,Job_title,min_sal,max_sal)VALUES('COMP OP','Computer Operator',1500,13000);
 
-SELECT * FROM JOB;
+SELECT * FROM Job;
 
-INSERT INTO DEPOSIT(a_no,cname,bname,amount,a_date)VALUES('101','Anil','andheri',7000,TO_DATE('01-01-2006','DD-MM-YYYY'));
-INSERT INTO DEPOSIT(a_no,cname,bname,amount,a_date)VALUES('102','sunil','virar',5000,TO_DATE('15-07-2006','DD-MM-YYYY'));
-INSERT INTO DEPOSIT(a_no,cname,bname,amount,a_date)VALUES('103','jay','villeparle',6500,TO_DATE('12-03-2006','DD-MM-YYYY'));
-INSERT INTO DEPOSIT(a_no,cname,bname,amount,a_date)VALUES('104','vijay','andheri',8000,TO_DATE('17-09-2006','DD-MM-YYYY'));
-INSERT INTO DEPOSIT(a_no,cname,bname,amount,a_date)VALUES('105','keyur','dadar',7500,TO_DATE('19-11-2006','DD-MM-YYYY'));
-INSERT INTO DEPOSIT(a_no,cname,bname,amount,a_date)VALUES('106','mayur','borivali',5500,TO_DATE('21-12-2006','DD-MM-YYYY'));
+INSERT INTO Deposit(a_no,cname,bname,amount,a_date)VALUES('101','Anil','andheri',7000,TO_DATE('01-01-2006','DD-MM-YYYY'));
+INSERT INTO Deposit(a_no,cname,bname,amount,a_date)VALUES('102','sunil','virar',5000,TO_DATE('15-07-2006','DD-MM-YYYY'));
+INSERT INTO Deposit(a_no,cname,bname,amount,a_date)VALUES('103','jay','villeparle',6500,TO_DATE('12-03-2006','DD-MM-YYYY'));
+INSERT INTO Deposit(a_no,cname,bname,amount,a_date)VALUES('104','vijay','andheri',8000,TO_DATE('17-09-2006','DD-MM-YYYY'));
+INSERT INTO Deposit(a_no,cname,bname,amount,a_date)VALUES('105','keyur','dadar',7500,TO_DATE('19-11-2006','DD-MM-YYYY'));
+INSERT INTO Deposit(a_no,cname,bname,amount,a_date)VALUES('106','mayur','borivali',5500,TO_DATE('21-12-2006','DD-MM-YYYY'));
 
-SELECT * FROM DEPOSIT;
+SELECT * FROM Deposit;
 
-INSERT INTO BORROW(loanno,cname,bname,amount)VALUES('201','ANIL','VRCE',1000);
-INSERT INTO BORROW(loanno,cname,bname,amount)VALUES('206','MEHUL','AJNI',5000);
-INSERT INTO BORROW(loanno,cname,bname,amount)VALUES('311','SUNIL','DHARAMPETH',3000);
-INSERT INTO BORROW(loanno,cname,bname,amount)VALUES('321','MADHURI','ANDHERI',2000);
-INSERT INTO BORROW(loanno,cname,bname,amount)VALUES('375','PRMOD','VIRAR',8000);
-INSERT INTO BORROW(loanno,cname,bname,amount)VALUES('481','KRANTI','NEHRU PLACE',3000);
+INSERT INTO Borrow(loanno,cname,bname,amount)VALUES('201','ANIL','VRCE',1000);
+INSERT INTO Borrow(loanno,cname,bname,amount)VALUES('206','MEHUL','AJNI',5000);
+INSERT INTO Borrow(loanno,cname,bname,amount)VALUES('311','SUNIL','DHARAMPETH',3000);
+INSERT INTO Borrow(loanno,cname,bname,amount)VALUES('321','MADHURI','ANDHERI',2000);
+INSERT INTO Borrow(loanno,cname,bname,amount)VALUES('375','PRMOD','VIRAR',8000);
+INSERT INTO Borrow(loanno,cname,bname,amount)VALUES('481','KRANTI','NEHRU PLACE',3000);
 
-SELECT * FROM BORROW;
+SELECT * FROM Borrow;
