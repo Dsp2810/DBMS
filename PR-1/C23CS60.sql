@@ -1,11 +1,11 @@
-CREATE TABLE JOB (
+CREATE TABLE Job (
     job_id varchar2(15) NOT NULL UNIQUE,
     job_title varchar2(30) NOT NULL,
     min_sal number(7,2) NOT NULL,
     max_sal number(7,2) NOT NULL
 );
 
-CREATE TABLE EMPLOYEES (
+CREATE TABLE Employee (
     emp_no number(3) NOT NULL UNIQUE,
     emp_name varchar2(30) NOT NULL,
     emp_sal number(8,2) NOT NULL,
@@ -13,7 +13,7 @@ CREATE TABLE EMPLOYEES (
     dept_no number(3) NOT NULL
 );
 
-CREATE TABLE DEPOSIT (
+CREATE TABLE Deposit (
     a_no varchar2(5) NOT NULL UNIQUE,
     cname varchar2(15) NOT NULL,
     bname varchar2(10) NOT NULL,
@@ -21,20 +21,20 @@ CREATE TABLE DEPOSIT (
     a_date date NOT NULL
 );
 
-CREATE TABLE BORROW (
+CREATE TABLE Borrow (
     loanno varchar2(5) NOT NULL UNIQUE,
     cname varchar2(15) NOT NULL,
     bname varchar2(15) NOT NULL,
     amount number(7,2) NOT NULL
 );
-INSERT INTO EMPLOYEES(emp_no,emp_name,emp_sal,emp_comm,dept_no)VALUES(101,'Smith',800,455,20);
-INSERT INTO EMPLOYEES(emp_no,emp_name,emp_sal,emp_comm,dept_no)VALUES(102,'Snehal',1600,0,25);
-INSERT INTO EMPLOYEES(emp_no,emp_name,emp_sal,emp_comm,dept_no)VALUES(103,'Adama',1100,425,20);
-INSERT INTO EMPLOYEES(emp_no,emp_name,emp_sal,dept_no)VALUES(104,'Aman',3000,15);
-INSERT INTO EMPLOYEES(emp_no,emp_name,emp_sal,emp_comm,dept_no)VALUES(105,'Anita',5000,50000,10);
-INSERT INTO EMPLOYEES(emp_no,emp_name,emp_sal,dept_no)VALUES(106,'Anamika',2975,30);
+INSERT INTO Employee(emp_no,emp_name,emp_sal,emp_comm,dept_no)VALUES(101,'Smith',800,455,20);
+INSERT INTO Employee(emp_no,emp_name,emp_sal,emp_comm,dept_no)VALUES(102,'Snehal',1600,0,25);
+INSERT INTO Employee(emp_no,emp_name,emp_sal,emp_comm,dept_no)VALUES(103,'Adama',1100,425,20);
+INSERT INTO Employee(emp_no,emp_name,emp_sal,dept_no)VALUES(104,'Aman',3000,15);
+INSERT INTO Employee(emp_no,emp_name,emp_sal,emp_comm,dept_no)VALUES(105,'Anita',5000,50000,10);
+INSERT INTO Employee(emp_no,emp_name,emp_sal,dept_no)VALUES(106,'Anamika',2975,30);
 
-SELECT * FROM EMPLOYEES;
+SELECT * FROM Employee;
 
 INSERT INTO JOB(job_id,job_title,min_sal,max_sal)VALUES('IT PROG','Programmer',4000,10000);
 INSERT INTO JOB(job_id,job_title,min_sal,max_sal)VALUES('MK MGR','Marketing Manager',9000,15000);
